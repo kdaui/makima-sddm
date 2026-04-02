@@ -2,7 +2,11 @@
 
 A Makima (Chainsaw Man) themed configuration for [SilentSDDM](https://github.com/uiriansan/SilentSDDM) - a highly customizable SDDM login manager theme.
 
-![Preview](makima.png)
+Blur with clock:
+![Blur Preview](blur.png)
+
+Password prompt:
+![Password preview](Password-part.png)
 
 ## Color Palette (Option C)
 
