@@ -4,41 +4,18 @@ A Makima (Chainsaw Man) themed configuration for [SilentSDDM](https://github.com
 
 ![Preview](makima.png)
 
-## Features
-
-- **Makima-inspired color scheme** with dark rose accents
-- **Custom background** featuring Makima from Chainsaw Man
-- **Right-aligned login form** with clock in center-right
-- **Partial blur** on lock screen for depth
-- **Minimalist design** with hidden avatar and virtual keyboard disabled
-
 ## Color Palette (Option C)
 
 | Element | Color |
 |---------|-------|
 | Accent | `#8B3A3A` (dark rose) |
 | Highlight | `#C4626D` (coral pink) |
-| Text | `#C4626D` (accent color) |
+| Text | `#EFDACC` (cream) |
 | Background | `#000000` (pure black) |
 
 ## Prerequisites
 
-- [SilentSDDM](https://github.com/uiriansan/SilentSDDM) installed
-- SDDM as your display manager
-- Qt6 with graphical effects support
-
-### Required Packages (Fedora)
-
-```bash
-sudo dnf install qt5-qtgraphicaleffects qt5-qtquickcontrols2 google-noto-cjk-fonts
-```
-
-### Required Packages (Arch Linux)
-
-```bash
-sudo pacman -S sddm noto-fonts-cjk
-yay -S otf-ipafont qt5-graphicaleffects qt5-quickcontrols2
-```
+Requires [SilentSDDM](https://github.com/uiriansan/SilentSDDM) installed.
 
 ## Installation
 
@@ -76,15 +53,6 @@ yay -S otf-ipafont qt5-graphicaleffects qt5-quickcontrols2
    systemctl restart sddm
    ```
 
-### Option 2: Test Before Installing
-
-```bash
-cd /usr/share/sddm/themes/silent
-./test.sh
-```
-
-This opens a preview window. Press `Ctrl+C` to exit.
-
 ## Customization
 
 You can edit `makima.conf` to customize:
@@ -112,31 +80,3 @@ Then restart your session or log out and back in.
 - **SilentSDDM**: [uiriansan/SilentSDDM](https://github.com/uiriansan/SilentSDDM) - The customizable SDDM theme framework this configuration is built upon
 - **Makima-SDDM**: [Arnau029/Makima-SDDM](https://github.com/Arnau029/Makima-SDDM) - The original Makima-themed SDDM theme that inspired this configuration (used for background image and aesthetic)
 - **Makima**: Character design by Tatsuki Fujimoto for Chainsaw Man
-
-## License
-
-This configuration is released under the same license as SilentSDDM (GPL-3.0-or-later).
-
-The background image is property of its respective owners and is used here for personal customization purposes.
-
-## Troubleshooting
-
-### Virtual keyboard keeps appearing
-Make sure `display = false` is set in `[LoginScreen.MenuArea.Keyboard]` section.
-
-### SDDM doesn't start
-Check SDDM status:
-```bash
-systemctl status sddm
-journalctl -u sddm -e
-```
-
-### Colors not applying
-Make sure you're using the correct config file in `metadata.desktop`:
-```
-ConfigFile=configs/makima.conf
-```
-
-## Contributing
-
-Feel free to fork and customize this theme for your own setup. If you make improvements, submit a pull request!
