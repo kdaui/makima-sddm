@@ -77,6 +77,6 @@ Then restart your session or log out and back in.
 
 ## Credits
 
-- **SilentSDDM**: [uiriansan/SilentSDDM](https://github.com/uiriansan/SilentSDDM) - The customizable SDDM theme framework this configuration is built upon
-- **Makima-SDDM**: [Arnau029/Makima-SDDM](https://github.com/Arnau029/Makima-SDDM) - The original Makima-themed SDDM theme that inspired this configuration (used for background image and aesthetic)
-- **Makima**: Character design by Tatsuki Fujimoto for Chainsaw Man
+- **SilentSDDM**: [uiriansan/SilentSDDM](https://github.com/uiriansan/SilentSDDM) - The customizable SDDM theme framework this configuration is made with.
+- **Makima-SDDM**: [Arnau029/Makima-SDDM](https://github.com/Arnau029/Makima-SDDM) - The Makima SDDM theme that inspired this configuration (I used the bg image from this).
+- **Makima**: Character created by Tatsuki Fujimoto for the manga "Chainsaw Man".
