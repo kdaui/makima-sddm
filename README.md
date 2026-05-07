@@ -69,16 +69,6 @@ You can edit `makima.conf` to customize:
 
 For full customization options, see the [SilentSDDM Wiki](https://github.com/uiriansan/SilentSDDM/wiki).
 
-## System Color Scheme
-
-To apply the Makima colors to your entire desktop (KDE, GTK, Qt), see the companion repositories:
-
-- **KDE Plasma**: Copy `makima.colors` to `~/.local/share/color-schemes/`
-- **GTK 3/4**: Copy `colors.css` to `~/.config/gtk-3.0/` and `~/.config/gtk-4.0/`
-- **Qt5/6**: Copy `Makima.conf` to `~/.config/qt5ct/colors/` and `~/.config/qt6ct/colors/`
-
-Then restart your session or log out and back in.
-
 ## Credits
 
 - **SilentSDDM**: [uiriansan/SilentSDDM](https://github.com/uiriansan/SilentSDDM) - The customizable SDDM theme framework this configuration is made with.
