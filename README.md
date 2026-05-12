@@ -23,12 +23,36 @@ Requires [SilentSDDM](https://github.com/uiriansan/SilentSDDM) installed.
 
 ## Installation
 
-### Option 1: Manual Installation
+### Option 1: Automated Script (Recommended)
+
+```bash
+git clone https://github.com/kdaui/Makima-SDDM.git
+cd Makima-SDDM
+./install.sh
+```
+
+The script will:
+- Check that SDDM and SilentSDDM are installed
+- Offer to install SilentSDDM automatically if missing
+- Copy theme files to the right locations
+- Configure metadata.desktop to use the Makima theme
+- Ask to preview the theme (via SilentSDDM's test.sh)
+- Ask before restarting SDDM
+
+Options:
+```bash
+./install.sh --skip-test         # skip the test prompt
+./install.sh --skip-sddm-restart # skip the restart prompt
+./install.sh --skip-silent-install  # skip SilentSDDM install check
+./install.sh --help              # show all options
+```
+
+### Option 2: Manual Installation
 
 1. **Download the theme files:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/makima-sddm.git
-   cd makima-sddm
+   git clone https://github.com/kdaui/Makima-SDDM.git
+   cd Makima-SDDM
    ```
 
 2. **Copy the configuration file to SilentSDDM:**
@@ -54,7 +78,7 @@ Requires [SilentSDDM](https://github.com/uiriansan/SilentSDDM) installed.
 
 5. **Restart SDDM:**
    ```bash
-   systemctl restart sddm
+   sudo systemctl restart sddm
    ```
 
 ## Customization
